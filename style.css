@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: burlywood;
+    color: #222;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #222;
+    color: white;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: navajowhite;
+    text-decoration: none;
+}
+
+
+section {
+    padding: 80px 50px;
+    min-height: 300px;
+}
+
+#home {
+    text-align: center;
+    padding-top: 120px;
+    background-color: white;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: beige;
+    cursor: pointer;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+#skills ul {
+    list-style: none;
+}
+
+#skills li {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 18px;
+    background-color: peachpuff;
+    border-radius: 5px;
+}
+
+#projects div {
+    background-color: mintcream;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #309;
+    color: white;
+}
