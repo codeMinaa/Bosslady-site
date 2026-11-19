@@ -1,5 +1,5 @@
 
-
+/* GENERAL RESET */
 * {
     margin: 0;
     padding: 0;
@@ -12,31 +12,28 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background: #0b0714;
-    color: white;
+    background: #FFF8E7;
+    color: #171717;
     line-height: 1.6;
 }
 
-
+/* NAVIGATION */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 20px 8%;
-
-    background: rgba(11, 7, 20, 0.9);
-
+    background: #FFF8E7;
     position: sticky;
     top: 0;
     z-index: 1000;
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 4px solid #171717;
 }
 
 nav h2 {
-    font-size: 25px;
-    color: #d8a4ff;
+    font-size: 28px;
+    color: #8B5CF6;
+    font-weight: 900;
 }
 
 nav ul {
@@ -46,89 +43,70 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: #171717;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #d8a4ff;
+    color: #FF70A6;
 }
 
-
-
+/* HOME SECTION */
 #home {
     min-height: 90vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
     padding: 100px 20px;
-
-    background:
-        radial-gradient(circle at top left, #4b197a, transparent 35%),
-        radial-gradient(circle at bottom right, #7a164f, transparent 35%),
-        #0b0714;
+    background: #8B5CF6;
+    color: #171717;
+    border-bottom: 4px solid #171717;
 }
 
 #home h1 {
     font-size: clamp(45px, 8vw, 80px);
     margin-bottom: 15px;
-
-   background: linear-gradient(90deg, #d8a4ff, #ff79c6);
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+    color: #FFF8E7;
+    font-weight: 900;
 }
 
 #home h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #eeeeee;
+    color: #171717;
 }
 
 #home p {
     max-width: 650px;
     font-size: 18px;
-    color: #c9c3d1;
+    color: #171717;
 }
 
-
-
+/* BUTTON */
 button {
     margin-top: 30px;
-
     padding: 14px 30px;
-
-    border: none;
-    border-radius: 30px;
-
-    background: linear-gradient(90deg, #8e44ad, #e84393);
-
-    color: white;
-
+    border: 3px solid #171717;
+    border-radius: 8px;
+    background: #FF8A3D;
+    color: #171717;
     font-size: 16px;
     font-weight: bold;
-
     cursor: pointer;
-
+    box-shadow: 5px 5px 0 #171717;
     transition: 0.3s;
 }
 
 button:hover {
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 10px 30px rgba(232, 67, 147, 0.4);
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0 #171717;
 }
 
-
-
+/* GENERAL SECTIONS */
 section {
     padding: 100px 8%;
 }
@@ -136,97 +114,120 @@ section {
 section h2 {
     font-size: 40px;
     margin-bottom: 30px;
-
-    color: #d8a4ff;
+    color: #8B5CF6;
+    font-weight: 900;
 }
 
-
-
+/* ABOUT */
 #about {
-    background: #100b1c;
+    background: #FFF8E7;
+    border-bottom: 4px solid #171717;
 }
 
 #about p {
     max-width: 800px;
     margin-bottom: 20px;
-    color: #c9c3d1;
+    color: #333333;
     font-size: 17px;
 }
 
-
-
+/* SKILLS */
 #skills {
     text-align: center;
+    background: #FF70A6;
+    border-bottom: 4px solid #171717;
+}
+
+#skills h2 {
+    color: #171717;
 }
 
 #skills ul {
     list-style: none;
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
     gap: 20px;
 }
 
 #skills li {
     padding: 15px 25px;
-
-    background: rgba(255, 255, 255, 0.07);
-
-    border: 1px solid rgba(255, 255, 255, 0.1);
-
-    border-radius: 15px;
-
+    background: #FFF8E7;
+    border: 3px solid #171717;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 4px 4px 0 #171717;
     transition: 0.3s;
 }
 
 #skills li:hover {
-    transform: translateY(-6px);
-
-    background: rgba(216, 164, 255, 0.15);
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0 #171717;
 }
 
-
+/* PROJECTS */
 #projects {
-    background: #100b1c;
+    background: #FFF8E7;
+    border-bottom: 4px solid #171717;
 }
 
-#projects div {
-    background: rgba(255, 255, 255, 0.06);
+#projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-    border: 1px solid rgba(255, 255, 255, 0.1);
+/* PROJECT GRID */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
 
+/* INDIVIDUAL PROJECT CARDS */
+.project-card {
+    background: #FF8A3D;
+    border: 3px solid #171717;
     padding: 30px;
-
-    margin: 20px 0;
-
-    border-radius: 20px;
-
+    border-radius: 8px;
+    box-shadow: 6px 6px 0 #171717;
     transition: 0.3s;
 }
 
-#projects div:hover {
-    transform: translateY(-8px);
-
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.3);
+.project-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 10px 10px 0 #171717;
 }
 
-#projects h3 {
+.project-card h3 {
     font-size: 24px;
-    margin-bottom: 10px;
-    color: #ff79c6;
+    margin-bottom: 15px;
+    color: #171717;
 }
 
-#projects p {
-    color: #c9c3d1;
+.project-card p {
+    color: #333333;
+    margin-bottom: 20px;
 }
 
+.project-card span {
+    display: inline-block;
+    background: #FFF8E7;
+    border: 2px solid #171717;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+}
 
-
+/* CONTACT */
 #contact {
     text-align: center;
+    background: #8B5CF6;
+    color: #171717;
+}
+
+#contact h2 {
+    color: #FFF8E7;
 }
 
 #contact p {
@@ -234,30 +235,25 @@ section h2 {
 }
 
 #contact a {
-    color: #d8a4ff;
-    text-decoration: none;
+    color: #171717;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #contact a:hover {
-    color: #ff79c6;
+    color: #FFF8E7;
 }
 
-
+/* FOOTER */
 footer {
     text-align: center;
-
     padding: 30px;
-
-    background: #07050c;
-
-    color: #aaa;
+    background: #171717;
+    color: #FFF8E7;
 }
 
-
-
-
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 700px) {
-
     nav {
         flex-direction: column;
         gap: 15px;
@@ -279,5 +275,9 @@ footer {
 
     section h2 {
         font-size: 32px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
     }
 }
